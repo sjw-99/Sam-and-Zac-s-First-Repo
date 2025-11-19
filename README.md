@@ -1,5 +1,5 @@
 # Sam-and-Zac-s-First-Repo
-Everything we've learned about Git &amp; GitHub
+## Everything we've learned about Git &amp; GitHub
 
 Git is a version control tool
 
@@ -36,3 +36,20 @@ Git organises different versions into branches. Different people collaborating o
 
 ## The .gitignore File
 By creating a .gitignore file within the working repository, the user/team can create a list of file types, directories, extensions etc. that git will automatically ignore. Pre-made template .gitignore files exist for most working environments that can be selected and edited when first creating a repository.
+
+## Pulling from GitHub
+To ensure that developers are starting in the same place, they should pull the current version of the code onto their branch. This is done using the command:
+
+```git pull origin branch-name```
+
+This will put the current version of all the repository files onto the user's branch, ready to be edited.
+
+## Pushing to GitHub
+Once a developer has built new code or fixed existing code, they can push their changes to their branch on GitHub using the following command
+
+```git push remote-name branch-name```
+
+The remote name is usually 'origin' but can be checked using ```git remote -v```. The changes will now be reflected in the user's branch of the repository on GitHub.
+
+## Merging on GitHub
+When changes have been made, a new feature has been built, or a bug has been fixed, a group of developers will then want to merge their work onto the main branch. This is done in browser on GitHub by creating a pull request. The pull request will scan for any merge conflicts, which then need to be reviewed and resolved by the team. Once this has been resolved, the branches can be merged and the main branch then reflects all the changes made.
