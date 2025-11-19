@@ -5,19 +5,35 @@ Git is a version control tool
 
 Git has 3 main states that your file can be contained within: 
 
--``` Working Directory```
+-``` working directory```
 
 The file has been altered but not yet committed to your database yet.
 
--```Staging Area```
+-```staging area```
 
 Once added with the git command, this modified file is  being tracked by Git and is ready to be committed.
 
--```Committed```
+-```committed```
 
 Altered file is now stored in the local database. 
 
-[title](Images/images.png)
+![title](image/images.png)
+
+## Restore, Revert and Reset
+
+#### For undoing changes in development, there are 3 different commands
+
+```restore```
+
+This command 'restores' a file to its previously defined state - not updating your development history.
+
+```revert```
+
+Creates a new commit that reverts the changes made by other commits
+
+```Reset```
+
+Breaks source code beyond a desired commit. Updates your branch and changes commit history.
 
 ## Git Branches
 Git organises different versions into branches. Different people collaborating on a repository may have different branches containing their work, separate from the 'main' or 'master' branch.
